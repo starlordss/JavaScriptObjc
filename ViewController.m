@@ -56,10 +56,8 @@
 - (void)callSystemCamera
 {
     NSLog(@"JS 调用了相机");
-    
     JSValue *jsFunc = self.jsContext[@"jsFunc"];
     [jsFunc callWithArguments:nil];
-    
 }
 
 - (void)jsCallObjcAndObjcWithDict:(NSDictionary *)params
